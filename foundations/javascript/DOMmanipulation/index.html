@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container">
+        <div class="content">
+            This is the glorious text-content!
+        </div>
+    </div>
+</body>
+<script>
+    const step1 = document.createElement('p');
+    step1.textContent = "Hey, Im red";
+    step1.style.color = "red";
+    document.querySelector("#container").appendChild(step1);
+
+    const step2 = document.createElement('h3');
+    step2.textContent = "Im a blue h3";
+    step2.style.color = "blue";
+    document.querySelector("#container").appendChild(step2);
+
+    const step3A = document.createElement('div');
+    step3A.style.borderColor = "black";
+    step3A.style.borderStyle = "solid";
+    step3A.style.backgroundColor = "pink";
+
+    const step3B = document.createElement('h1');
+    step3B.textContent = "Im in a div";
+    step3A.appendChild(step3B);
+
+    const step3C = document.createElement('p');
+    step3C.textContent = "ME TOO!";
+    step3A.appendChild(step3C);
+
+    document.querySelector("#container").appendChild(step3A);
+</script>
+
+</html>
